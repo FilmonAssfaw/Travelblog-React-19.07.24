@@ -7,13 +7,13 @@ export default function UserCards({ users }) {
       {users.map((user) => (
         <div className="card" key={user.id}>
           <img
-            src={user.avatar}
+            src={user.img}
             alt={`${user.name} avatar`}
             className="card-avatar"
           />
           <div className="card-details">
             <h2>{user.name}</h2>
-            <p>{user.email}</p>
+            <p>{user.description}</p>
           </div>
         </div>
       ))}
