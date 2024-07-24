@@ -9,10 +9,10 @@ export default function Map() {
   const [lng] = useState(139.753);
   const [lat] = useState(35.6844);
   const [zoom] = useState(1);
-  const [API_KEY] = useState("4697dLrGj0eeXceTVCMb");
+  const [API_KEY] = useState(import.meta.env.VITE_TILES_API_KEY);
 
   useEffect(() => {
-    if (map.current) return; // stops map from intializing more than once
+    if (map.current) return;
 
     map.current = new maplibregl.Map({
       container: mapContainer.current,

@@ -6,6 +6,7 @@ import Postings from "./components/Postings";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Footer from "./components/Footer";
+import PostDetails from "./components/PostDetails";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="Postings" element={<Postings />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="Login" element={<Login />} />
+            <Route path="Post/:id" element={<PostDetails />} />
           </Routes>
         </main>
         <Footer />

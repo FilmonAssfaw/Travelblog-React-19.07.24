@@ -1,40 +1,28 @@
-import { useState } from "react";
 import "./UserCards.css";
+import { Link } from "react-router-dom";
 
-export default function UserCards({ users }) {
-  const [showMore, setShowMore] = useState({});
-
-  const handleShowMore = (id) => {
-    setShowMore((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
-  };
+export default function UserCards({ allPosts }) {
   return (
     <div className="user-cards">
-      {users.map((user) => (
-        <div className="card" key={user.id}>
-          <img
-            src={user.img}
-            alt={`${user.name} avatar`}
-            className="card-avatar"
-          />
-          <div className="card-details">
-            <h2>{user.name}</h2>
-            <p>{user.description}</p>
-            {showMore[user.id] && (
-              <p className="additional-info">
-                Additional information about {user.moreInfo}...
-              </p>
-            )}
+      {allPosts.map((user) => (
+        <Link
+          to={`/post/${user.id}`}
+          key={user.id}
+          className="user-cards__card-link"
+        >
+          <div className="user-cards__card">
+            <img
+              src={user.img}
+              className="user-cards__card-avatar"
+              alt={user.title}
+            />
+            <div className="user-cards__card-details">
+              <h2 className="user-cards__card-title">{user.title}</h2>
+              <p className="user-cards__card-date">{user.visitingDate}</p>
+              <p className="user-cards__card-author">{user.author}</p>
+            </div>
           </div>
-          <button
-            className="card-button"
-            onClick={() => handleShowMore(user.id)}
-          >
-            {showMore[user.id] ? "Show Less" : "View Details"}
-          </button>
-        </div>
+        </Link>
       ))}
     </div>
   );

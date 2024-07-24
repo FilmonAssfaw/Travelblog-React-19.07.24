@@ -75,6 +75,10 @@ export default function Contact() {
           </form>
         )}
       </div>
+      <p>
+        This was a project from the FullStack course at the Hamburg Coding
+        School. Shout out to all my Teachers for helping me.
+      </p>
     </div>
   );
 }
