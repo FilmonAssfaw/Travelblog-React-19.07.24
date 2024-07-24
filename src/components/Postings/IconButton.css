@@ -1,0 +1,14 @@
+.IconButton {
+  background: var(--color-primary);
+  border-radius: 0.5em;
+  border: none;
+  padding: 1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.IconButton svg {
+  font-size: 2em;
+}

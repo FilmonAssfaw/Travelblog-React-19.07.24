@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 
 export default function Footer() {
@@ -8,8 +7,8 @@ export default function Footer() {
         <div className="footer-section">
           <h2>About Us</h2>
           <p>
-            We are a company dedicated to providing the best services for our
-            customers.
+            Im a Traveler and dedicated my life to see the world! I provide you
+            the best info so follow along!
           </p>
         </div>
         <div className="footer-section">
@@ -19,20 +18,20 @@ export default function Footer() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <a href="/Postings">Postings</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/login">Login</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/Contact">Contact</a>
             </li>
           </ul>
         </div>
         <div className="footer-section">
           <h2>Contact Me</h2>
-          <p>Email: info@agent.com</p>
-          <p>Phone: +110 112 911</p>
+          <p>Email: info@fili.com</p>
+          <p>Phone: +110/112/911</p>
         </div>
       </div>
       <div className="footer-bottom">

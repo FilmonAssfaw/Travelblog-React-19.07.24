@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./map.css";
@@ -29,28 +29,28 @@ export default function Map() {
       .addTo(map.current);
 
     new maplibregl.Marker({ color: "#FF0000" })
-      .setLngLat([100.7525, 25.6846])
-      .setPopup(new maplibregl.Popup().setHTML("Here is Cairo!"))
+      .setLngLat([-122.4194, 37.7749])
+      .setPopup(new maplibregl.Popup().setHTML("Here is San Francisco!"))
       .addTo(map.current);
 
     new maplibregl.Marker({ color: "#FF0000" })
-      .setLngLat([190.7525, 25.6846])
+      .setLngLat([-118.2437, 34.0522])
       .setPopup(new maplibregl.Popup().setHTML("Here is Los Angeles!"))
       .addTo(map.current);
 
     new maplibregl.Marker({ color: "#FF0000" })
-      .setLngLat([159.7525, 25.6846])
-      .setPopup(new maplibregl.Popup().setHTML("Here is Tokyo!"))
+      .setLngLat([30.8025, 26.8206])
+      .setPopup(new maplibregl.Popup().setHTML("Here is Egypt!"))
       .addTo(map.current);
 
     new maplibregl.Marker({ color: "#FF0000" })
-      .setLngLat([110.7525, 25.6846])
+      .setLngLat([39.7823, 15.1794])
       .setPopup(new maplibregl.Popup().setHTML("Here is Asmara!"))
       .addTo(map.current);
 
     new maplibregl.Marker({ color: "#FF0000" })
-      .setLngLat([12.7525, 25.6846])
-      .setPopup(new maplibregl.Popup().setHTML("Here is God!"))
+      .setLngLat([-1.1743, 52.3555])
+      .setPopup(new maplibregl.Popup().setHTML("Here is England!"))
       .addTo(map.current);
 
     new maplibregl.Marker({ color: "#FF6666", draggable: true })

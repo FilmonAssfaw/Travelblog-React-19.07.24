@@ -1,0 +1,26 @@
+.PostForm {
+  background: var(--color-grey);
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.PostForm--field {
+  display: flex;
+  gap: 0.5em;
+}
+
+.PostForm--field label {
+  width: 6em;
+}
+
+.PostForm--field input,
+.PostForm--field textarea {
+  width: 18em;
+}
+
+.PostForm--button {
+  padding-left: 6.5em;
+}

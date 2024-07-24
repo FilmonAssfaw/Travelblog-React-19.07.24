@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "img": "https://picsum.photos/id/1/200/300",
+      "name": "Japan",
+      "description": "This is Japan"
+    },
+    {
+      "id": "2",
+      "img": "https://via.placeholder.com/150",
+      "name": "Eritrea",
+      "description": "This is Eritrea"
+    },
+    {
+      "id": "3",
+      "img": "https://via.placeholder.com/150",
+      "name": "Egypt",
+      "description": "This is Egypt"
+    }
+  ]
+}
