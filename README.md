@@ -13,3 +13,12 @@ npm install
 ```
 npm run dev
 ```
+
+## Setup enviroment file
+
+```
+.env.development.local
+VITE_TILES_API_KEY=GETYOURONKEY
+```
+
+https://www.maptiler.com/
